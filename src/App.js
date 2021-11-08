@@ -7,7 +7,6 @@ import Area03 from "./components/area03/Area03";
 import AreaContact from "./components/areaContact/AreaContact";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
-import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 import "./app.scss";
 
@@ -26,7 +25,6 @@ function App() {
         <AreaContact />
         <Footer />
       </div>
-      <ScrollToTop />
     </div>
   );
 }

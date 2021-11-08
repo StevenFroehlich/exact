@@ -1,12 +1,14 @@
-import React from 'react';
-import './area03.scss';
+import React from "react";
+import "./area03.scss";
 
 function Area03() {
-    return (
-        <div className="area03" id="area03">
-            
-        </div>
-    )
+  return (
+    <div className="area03" id="area03">
+      <div className="scrollToTop">
+        <a href="#area01">Top</a>
+      </div>
+    </div>
+  );
 }
 
-export default Area03
+export default Area03;

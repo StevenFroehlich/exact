@@ -6,7 +6,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
         <div className={"topbar " + (menuOpen && 'active')}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#area01" class="logo">exact.</a>
+                    <a href="#area01" className="logo">exact.</a>
                 </div>
                 <div className="right">
                     <div className="hamburger" onClick={()=>{setMenuOpen(!menuOpen)}}>
