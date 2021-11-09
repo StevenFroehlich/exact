@@ -2,21 +2,17 @@
     height: 100vh;
     .sections{
         width: 100%;
-        height: calc(100vh - 70px);
+        margin: 0 auto;
         position: relative;
-        top: 70px;
+        top: 133px;
         overflow-x: hidden;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
         scrollbar-width: none;
         &::-webkit-scrollbar{
             display: none;
         }
 
         > * {
-            width: 100vw;
-            height: calc(100vh - 70px);
-            scroll-snap-align: start;
+            height: 900px;
         }
 
         > .footer{
@@ -31,7 +27,7 @@
             width: 40px;    
             height: 40px;
             z-index: 99;
-            background-color: #f9f9f9;
+            background-color: #ff0253;
             border-radius: 50%;
             cursor: pointer;
             display: flex;
