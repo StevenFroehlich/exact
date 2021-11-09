@@ -1,5 +1,92 @@
-.areaContact{
-    background-color: #090909;
-    position: relative;
+.areaContact {
+  background-color: #222;
+  position: relative;
+
+  form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 6px;
+      position: relative;
+      color: #ccc;
+      font-size: 20px;
+    }
+    input {
+      width: 100%;
+      height: 60px;
+      margin-top: 10px;
+      background-color: #666;
+      color: #ccc;
+      border-radius: 50px;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 25px 30px 0px 30px;
+    }
+    input:focus,
+    input:focus-visible {
+      padding: 25px 30px 0px 30px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      margin-top: 10px;
+      background-color: #666;
+      color: #ccc;
+      border-radius: 35px;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 30px 30px 0px 30px;
+    }
+    textarea:focus,
+    textarea:focus-visible {
+      padding: 30px 30px 0px 30px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    input:focus + label,
+    textarea:focus + label {
+      top: 100%;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 0;
+    }
+    span {
+      position: absolute;
+      padding-left: 30px;
+      top: 0;
+      left: 0;
+      transform: translateY(28px);
+      font-size: 16px;
+      transition-duration: 300ms;
+    }
+
+    label:focus-within > span,
+    input:not(:placeholder-shown) + span,
+    textarea:not(:placeholder-shown) + span {
+      font-size: 14px;
+      color: #ccc;
+      transform: translateY(18px);
+    }
+
+    button {
+        width: 180px;
+        font-weight: 700;
+        padding: 12px 0px;
+        margin-top: 20px;
+        background: #ff0253;
+        color: #ccc;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 0
+      }
+  }
 }
-  
