@@ -1,12 +1,13 @@
 import React from 'react';
 import './topbar.scss';
+import logoWhite from "../../assets/img/logoWhite.svg";
 
 function Topbar({ menuOpen, setMenuOpen }) {
     return (
         <div className={"topbar " + (menuOpen && 'active')}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#area01" className="logo">exact.</a>
+                    <a href="#area01" className="logo"></a>
                 </div>
                 <div className="right">
                     <div className="hamburger" onClick={()=>{setMenuOpen(!menuOpen)}}>
