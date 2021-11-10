@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-import Topbar from "./components/topbar/Topbar";
-import Area01 from "./components/area01/Area01";
-import Area02 from "./components/area02/Area02";
-import Area03 from "./components/area03/Area03";
-import AreaContact from "./components/areaContact/AreaContact";
-import Footer from "./components/footer/Footer";
-import Menu from "./components/menu/Menu";
+import Topbar from "./section/topbar/Topbar";
+import Area01 from "./section/area01/Area01";
+import Area02 from "./section/area02/Area02";
+import Area03 from "./section/area03/Area03";
+import AreaContact from "./section/areaContact/AreaContact";
+import Footer from "./section/footer/Footer";
+import Menu from "./section/menu/Menu";
 
 import "./app.scss";
 
