@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import ScrollToTop from "../scrollToTop/ScrollToTop";
+import React from "react";
 
 import "./areaContact.scss";
 
@@ -10,10 +9,13 @@ function AreaContact() {
         <div className="wrapperArea">
           <div className="wrapperHeading">
             <h2>CONTACT US</h2>
-            <p>We take time for your questions.</p>
-            <p>And are happy to show you a product demo.</p>
+            <p>
+              Please feel free to reach out to us anytime with your question or
+              a product demo request.
+            </p>
           </div>
           <div className="wrapperForm">
+            <h3>Message</h3>
             <form
               action="https://formsubmit.co/info@downsiteup.de"
               method="POST"
@@ -40,11 +42,21 @@ function AreaContact() {
                 />
                 <span>Message</span>
               </label>
-              <input type="checkbox" />
-              <p>Agree</p>
+              <div className="wrapperCheckbox">
+                <input type="checkbox" id="privacy" />
+                <label for="privacy" className="term">
+                  I agree that my data may be used to process this request (
+                  <a href="#area01">see privacy policy</a>)
+                </label>
+              </div>
+              <div className="wrapperCheckbox">
+                <input type="checkbox" id="information" />
+                <label for="information" className="term">
+                I would like to be informed about news from exact 
+                </label>
+              </div>
               <button type="submit">SEND</button>
             </form>
-            <ScrollToTop />
           </div>
         </div>
       </div>
