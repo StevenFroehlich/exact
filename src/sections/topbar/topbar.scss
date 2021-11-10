@@ -2,22 +2,41 @@
 
 .topbar {
   width: 100%;
-  height: 133px;
+  height: 75px;
   background-color: $maincolor;
   position: fixed;
   top: 0;
   z-index: 3;
+  @include desktop {
+    height: 133px;
+  }
   .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     .left {
-      .logo {
-        display: flex;
-        background-color: #ff0253;
-        height: 133px;
+      display: flex;
+      width: 150px;
+      height: 75px;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      @include desktop {
         width: 250px;
-        background-image: url(../../assets/img/logoHeaderDesktop.png);
+        height: 133px;
+        background: #ff0253;
+      }
+      .logo {
+        width: 111px;
+        height: 30px;
+        background: #000 url(../../assets/img/logoHeaderMobile.png) center
+          center / 111px 30px no-repeat;
+        @include desktop {
+          width: 186px;
+          height: 50px;
+          background: #ff0253 url(../../assets/img/logoHeaderDesktop.png) center
+            center / 186px 50px no-repeat;
+        }
       }
     }
     .right {
