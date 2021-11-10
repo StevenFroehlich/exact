@@ -1,7 +1,7 @@
 $maincolor: #000;
 
 $width: 960px;
-@mixin mobile {
+@mixin desktop {
     @media (min-width: #{$width}){
         @content
     }

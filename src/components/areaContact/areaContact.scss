@@ -2,27 +2,32 @@
 
 .areaContact {
   margin: 0 auto;
-  background-color: #1f1f1f;
+  background-color: #000;
   position: relative;
   padding: 0 8px;
   .wrapperArea {
     max-width: 960px;
     margin: 0 auto;
     padding: 80px 0 20px;
+    @include desktop {
+      padding: 160px 0 20px;
+    }
     .wrapperHeading {
-      background-color: #1f1f1f;
-      padding: 0 15px 40px;
+      padding: 0 0 55px 0;
+      @include desktop {
+        padding: 0 0 55px 160px;
+      }
       h2 {
         font-size: 40px;
         color: #fff;
         padding: 0 0 10px 0;
-        @include mobile {
+        @include desktop {
           font-size: 50px;
           color: #fff;
         }
       }
       p {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 400;
         color: #fff;
         padding: 0;
